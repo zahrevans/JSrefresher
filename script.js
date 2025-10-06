@@ -1,6 +1,6 @@
 const donnie = [
 
-    "Donnie Juice",
+    "\"Donnie Juice\"",
     "Contacts",
     "128p70",
     "One Piece Nerd",
@@ -10,10 +10,13 @@ const donnie = [
     "\"Liked\" D4vd",
     "Buzz Cut",
     "Doesnt Watch My show reccomendations",
-    "wont make a list about me"
+    "loser",
 
 ]
 
-donnie.forEach((e) => {
-    document.getElementById("output").innerHTML.
-});
+
+donnie.sort();
+
+for (let i = 0; i < donnie.length; i++) {
+    document.getElementById('output').innerHTML += "<li>" + (i + 1) + ". " + donnie[i] + "</li>";
+}
